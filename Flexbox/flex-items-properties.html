@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+    <title>Flexbox: propiedades de elementos flexibles</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .flex-container {
+            margin: 20px 0 50px;
+            list-style: none;
+            border: 1px solid silver;
+            display: flex;
+            padding: 0;
+        }
+
+        .flex-item {
+            background: tomato;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            line-height: 100px;
+            color: white;
+            text-align: center;
+        }
+
+
+        .basis-content {
+            flex-basis: content;
+            width: auto;
+        }
+
+        .basis-20-percent {
+            flex-basis: 20%;
+            width: auto;
+        }
+
+        .basis-80-percent {
+            flex-basis: 80%;
+            width: auto;
+        }
+
+
+        /* MENOS IMPORTANTES */
+
+        .item-order-1 {
+            order: 1;
+        }
+
+        .item-order-2 {
+            order: 2;
+        }
+
+        .item-order-3 {
+            order: 3;
+        }
+
+
+
+
+        .item-grow-1 {
+            flex-grow: 1;
+        }
+
+        .item-grow-2 {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Propiedades de flex items</h1>
+
+    <h3>Items order</h3>
+    <ul class="flex-container">
+        <li class="flex-item item-order-3">1</li>
+        <li class="flex-item item-order-2">2</li>
+        <li class="flex-item item-order-1">3</li>
+    </ul>
+
+    <h3>Items grow</h3>
+    <ul class="flex-container">
+        <li class="flex-item item-grow-1">1</li>
+        <li class="flex-item item-grow-2">2</li>
+        <li class="flex-item item-grow-1">1</li>
+    </ul>
+
+    <h3>Flex basis content</h3>
+    <ul class="flex-container">
+        <li class="flex-item basis-content">1, 1, 1, 1, 1, 1, 1, 1, 1, 1</li>
+        <li class="flex-item basis-content">2, 2, 2</li>
+        <li class="flex-item basis-content">3, 3, 3, 3, 3</li>
+    </ul>
+
+    <h3>Flex basis length</h3>
+    <ul class="flex-container">
+        <li class="flex-item basis-20-percent">20%</li>
+        <li class="flex-item basis-80-percent">80%</li>
+    </ul>
+
+</body>
+
+</html>

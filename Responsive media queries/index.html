@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        h1,
+        h2 {
+            margin-bottom: 50px;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 5em;
+            padding-top: 100px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .button {
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #3d5643;
+            border: 1px solid #3d5643;
+            display: block;
+            text-align: center;
+            padding: 17px 0;
+            width: 300px;
+            margin-bottom: 100px;
+        }
+
+        .button.solid {
+            color: white;
+            background: #3d5643;
+            transition: all .2s ease-in .1s;
+        }
+
+        .button.solid:hover {
+            color: #3d5643;
+            background: white;
+        }
+
+        .button.center {
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 100px;
+            background: gainsboro;
+            height: 100vh;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex-container article {
+            width: 40%
+        }
+
+
+
+
+        @media (max-width: 980px) {
+
+            h1 {
+                font-size: 3.5em;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .flex-container {
+                display: block;
+            }
+
+            .flex-container article {
+                width: 100%;
+                margin-bottom: 50px;
+            }
+
+            .button {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <header class="hero">
+
+            <h1>Responsive party</h1>
+            <a class="button solid center" href="#">Conócenos</a>
+
+        </header>
+
+        <section>
+
+            <div class="flex-container">
+
+                <article>
+                    <h2>Welcome to the party yabadú</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis deserunt fugit, similique
+                        ipsum
+                        dolorum asperiores neque temporibus laudantium? Tenetur natus velit iste eum architecto quo
+                        dolor ex
+                        quaerat suscipit obcaecati!</p>
+                    <p>Perspiciatis deserunt fugit, similique ipsum dolorum
+                        asp!</p>
+                    <p>Neque temporibus laudantium? Tenetur natus velit iste eum architecto quo dolor ex quaerat
+                        suscipit
+                        obcaecati!</p>
+                </article>
+
+                <article>
+                    <h2>Yay!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis deserunt fugit, similique
+                        ipsum
+                        dolorum asperiores neque temporibus laudantium? Tenetur natus velit iste eum architecto quo
+                        dolor ex
+                        quaerat suscipit obcaecati!</p>
+                    <p>Neque temporibus laudantium? Tenetur natus velit iste eum architecto quo dolor ex quaerat
+                        suscipit
+                        obcaecati!</p>
+                </article>
+            </div>
+
+            <a class="button" href="#">Conócenos</a>
+
+        </section>
+
+
+    </main>
+</body>
+
+</html>

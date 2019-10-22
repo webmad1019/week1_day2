@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Transitions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+        .button {
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #3d5643;
+            border: 1px solid #3d5643;
+            display: block;
+            text-align: center;
+            padding: 17px 0;
+            width: 300px;
+            margin-bottom: 100px;
+        }
+
+        .button.solid {
+            color: white;
+            background: #3d5643;
+
+            /*
+            transition-property: all;
+            transition-duration: .2s;
+            transition-timing-function: ease-in;
+            transition-delay: .1s;
+            */
+
+            transition: all .2s ease-in .1s;
+        }
+
+        .button.solid:hover {
+            color: #3d5643;
+            background: white;
+        }
+
+        .button.small {
+            font-size: .8em;
+            padding: 14px 0;
+            width: 220px;
+        }
+
+        .button.center {
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>CSS3 transtions</h1>
+
+        <a class="button" href="#">Conócenos</a>
+        <a class="button solid" href="#">Conócenos</a>
+        <a class="button small" href="#">Conócenos</a>
+        <a class="button solid small" href="#">Conócenos</a>
+        <a class="button solid center" href="#">Conócenos</a>
+
+    </main>
+</body>
+
+</html>

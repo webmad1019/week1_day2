@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Animaciones</title>
+
+	<style>
+		.loader {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			border: 4px solid #242F3F;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -15px;
+			animation: rotar 2s infinite ease;
+		}
+
+		.loader .relleno {
+			vertical-align: top;
+			display: inline-block;
+			width: 100%;
+			background-color: #242F3F;
+			animation: rellenar 2s infinite ease-in;
+		}
+
+
+		@keyframes rotar {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			25% {
+				transform: rotate(180deg);
+			}
+
+			50% {
+				transform: rotate(180deg);
+			}
+
+			75% {
+				transform: rotate(360deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes rellenar {
+			0% {
+				height: 0%;
+			}
+
+			25% {
+				height: 0%;
+			}
+
+			50% {
+				height: 100%;
+			}
+
+			75% {
+				height: 100%;
+			}
+
+			100% {
+				height: 0%;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="loader">
+		<div class="relleno"></div>
+	</div>
+
+</body>
+
+</html>
